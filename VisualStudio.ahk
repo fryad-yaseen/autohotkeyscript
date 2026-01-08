@@ -3,8 +3,8 @@
 A_MaxHotkeysPerInterval := 2000
 A_HotkeyInterval := 2000
 
-CapsLock:: return ; Disable Caps Lock when pressed alone
 SetCapsLockState "AlwaysOff" ; Keep Caps Lock permanently disabled
+CapsLock::Esc
 
 ; Method to handle the keys with selection
 HandleSelection(Key) {
@@ -143,3 +143,4 @@ CapsLock & Esc:: {
 ;         Sleep 1 ; Adjust delay (milliseconds) between clicks
 ;     }
 ; }
+
