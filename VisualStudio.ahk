@@ -73,12 +73,12 @@ CapsLock & Esc:: {
     }
 }
 
-; Using CapsLock with j, k, l, i as the arrow keys
+; Using CapsLock with h, j, k, l as vim arrow keys
 {
+    CapsLock & h:: HandleSelection("{Left}")
+    CapsLock & j:: HandleSelection("{Down}")
+    CapsLock & k:: HandleSelection("{Up}")
     CapsLock & l:: HandleSelection("{Right}")
-    CapsLock & j:: HandleSelection("{Left}")
-    CapsLock & k:: HandleSelection("{Down}")
-    CapsLock & i:: HandleSelection("{Up}")
 }
 
 ; Using CapsLock with u, o as HOME and END
@@ -143,4 +143,5 @@ CapsLock & Esc:: {
 ;         Sleep 1 ; Adjust delay (milliseconds) between clicks
 ;     }
 ; }
+
 
